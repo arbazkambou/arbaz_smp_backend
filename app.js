@@ -18,9 +18,7 @@ app.set("trust proxy", 1);
 app.use(express.json());
 
 app.use(cookieParser());
-app.get("/ok", (req, res, next) => {
-  res.status(200).json({ message: "hello" });
-});
+
 app.use(
   cors({
     // origin: ["http://localhost:3000", "https://arbaz-smp-frontend.vercel.app"],
