@@ -19,7 +19,8 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://arbaz-smp-frontend.vercel.app"],
+    // origin: ["http://localhost:3000", "https://arbaz-smp-frontend.vercel.app"],
+    origin: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     credentials: true,
   })
