@@ -3,7 +3,7 @@ import {
   GenerateConfirmEmailText,
   GenerateForgotPasswordText,
   GenerateWelcomeText,
-} from "./GenerateMessages.js";
+} from "./generateMessages.js";
 
 export class Email {
   constructor(user, url) {
