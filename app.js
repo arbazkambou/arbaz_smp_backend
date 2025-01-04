@@ -28,6 +28,10 @@ app.use(
   })
 );
 
+app.get("/api/hit", function (req, res, next) {
+  res.status(200).json({ message: "live" });
+});
+
 app.use("/api/user", userRouter);
 app.use("/api/product", productRouter);
 app.use("/api/bid", bidRouter);
